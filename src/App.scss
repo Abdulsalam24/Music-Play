@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #1e1e1e;
+}
+
+html,
+body {
+  background-color: var(--bg-color) !important;
+}
+
+.container{
+  background-color:var(--bg-color) !important;
+
+}
+.side_menu{
+  background-color:var(--bg-color) !important;
+    ul{
+      li{
+        padding:0 10px;
+        svg{
+          margin-right: 10px;
+        }
+      }
+    }
+}
+
