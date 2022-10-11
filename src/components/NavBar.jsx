@@ -17,9 +17,6 @@ function NavBar() {
     <nav className="relative">
       <div className="nav-bar container m-auto flex items-center p-3">
         <div className="flex items-center gap-4 md:gap-10">
-          {/* <div className="menu md:hidden" onClick={handleNav}>
-            <img src={menu} alt="" />
-          </div> */}
           <Menu className="menu md:hidden" onClick={handleNav} />
           <div className="logo">
             <img src={logo} alt="logo" />

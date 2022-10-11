@@ -10,33 +10,33 @@ import { ReactComponent as Video } from "../assets/img/videos.svg";
 
 function SideMenu({ handleNav }) {
   return (
-    <div className="absolute p-3 py-4 top-0 left-0 side_menu h-full z-10 w-full">
-      <ul className="flex flex-col gap-8">
+    <div className="side_menu absolute z-10 top--3 w-full h-screen">
+      <ul className="flex flex-col gap-8 py-6 px-4">
         <li onClick={handleNav}>
           <Menu />
         </li>
         <li>
-          <Home /> Home
+          <Home /> <i>Home</i>
         </li>
         <li>
           <Playlist />
-          My collections
+          <i>My collections</i>
         </li>
         <li>
           <Radio />
-          Radio
+          <i>Radio</i>
         </li>
         <li>
           <Video />
-          Music videos
+          <i>Music videos</i>
         </li>
         <li>
           <Profile />
-          Profile
+          <i>Profile</i>
         </li>
         <li>
           <Logout />
-          Log out
+          <i>Log out</i>
         </li>
       </ul>
     </div>

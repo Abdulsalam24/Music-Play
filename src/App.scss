@@ -12,20 +12,54 @@ html,
 body {
   background-color: var(--bg-color) !important;
 }
-
-.container{
-  background-color:var(--bg-color) !important;
-
+p {
+  font-size: 14px;
 }
-.side_menu{
-  background-color:var(--bg-color) !important;
-    ul{
-      li{
-        padding:0 10px;
-        svg{
-          margin-right: 10px;
-        }
+h1 {
+  font-size: 35px;
+}
+h2 {
+  font-size: 23.8px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 17px;
+}
+
+.bg-dark {
+  background-color: #1a1e1f;
+}
+
+.container {
+  background-color: var(--bg-color) !important;
+}
+.side_menu {
+  background-color: var(--bg-color) !important;
+  top: -12px;
+  ul {
+    li:nth-child(2) {
+      padding: 0;
+      gap: 0;
+    }
+    li {
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      i {
+        font-style: normal;
       }
     }
+  }
 }
 
+.nav-2 {
+  background: linear-gradient(
+      0deg,
+      rgba(29, 33, 35, 0.3),
+      rgba(29, 33, 35, 0.3)
+    ),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
