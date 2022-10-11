@@ -10,7 +10,7 @@ import { ReactComponent as Video } from "../assets/img/videos.svg";
 
 function SideMenu({ handleNav }) {
   return (
-    <div className="side_menu absolute z-10 top--3 w-full h-screen">
+    <div className="side_menu absolute z-20 top--3 w-full h-screen">
       <ul className="flex flex-col gap-8 py-6 px-4">
         <li onClick={handleNav}>
           <Menu />

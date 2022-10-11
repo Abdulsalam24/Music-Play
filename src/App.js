@@ -5,15 +5,16 @@ import Collections from './pages/Collections';
 import Home from './pages/Home';
 import ViewChart from './pages/ViewChart';
 import BottomNav from './components/BottomNav';
+import { useRef } from 'react';
 
 function App() {
-  return (
-    <div className="App">
+  const body = useRef()
 
-      <NavBar />
+  return (
+    <div ref={body} className="App">
+      <NavBar body={body}/>
       <Router>
         <Routes>
-
           <Route path='/' element={<Home />} />
           <Route path='/viewChart' element={<ViewChart />} />
           <Route path='/collections' element={<Collections />} />

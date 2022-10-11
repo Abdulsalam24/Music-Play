@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import logo from "../assets/img/logo.svg";
 
@@ -7,11 +7,19 @@ import { ReactComponent as Search } from "../assets/img/search.svg";
 
 import SideMenu from "./SideMenu";
 
-function NavBar() {
+function NavBar({ body }) {
   const [sideMenu, setSideMenu] = useState(false);
   const handleNav = () => {
     setSideMenu(!sideMenu);
   };
+
+  useEffect(() => {
+    if (sideMenu) {
+      body.current.style.position = "fixed";
+    } else {
+      body.current.style.position = "relative";
+    }
+  }, [sideMenu]);
 
   return (
     <nav className="relative">
