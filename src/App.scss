@@ -5,13 +5,14 @@
 }
 
 :root {
-  --bg-color: #1e1e1e;
+  --bg-color: #1D2123;
 }
 
 html,
 body {
   background-color: var(--bg-color) !important;
 }
+
 p {
   font-size: 14px;
 }
@@ -29,11 +30,13 @@ h4 {
 }
 
 .bg-dark {
-  background-color: #1a1e1f;
+  background-color: #1A1E1F;
 }
 
 .container {
   background-color: var(--bg-color) !important;
+  max-width: 1280px;
+  margin: auto;
 }
 .side_menu {
   background-color: var(--bg-color) !important;
@@ -63,5 +66,23 @@ h4 {
     ),
     linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 
-    border: 1px solid #FFFFFF1A
+  border: 1px solid #ffffff1a;
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 15px;
+  }
 }
