@@ -15,6 +15,9 @@ body {
   font-weight: 400;
 }
 
+input {
+  outline: none;
+}
 ul,
 li {
   list-style: none;
@@ -22,7 +25,7 @@ li {
 svg {
   cursor: pointer;
 }
-h5{
+h5 {
   font-size: 12px;
 }
 
@@ -42,21 +45,40 @@ h3 {
 h4 {
   font-size: 17px;
 }
-span{
+span {
   font-size: 10px;
 }
 
 .bg-dark {
   background-color: #1a1e1f;
 }
+.info-control.coll {
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #4b4d4c;
+    color: #efeee0;
+  }
+  li.active {
+    color: #1d2123;
+    background-color: #facd66;
+  }
+}
+.side-nav {
+  background-color: #1a1e1f;
+}
 
 .info-control {
-  margin-top: 25px;
   li {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #2D3132;
+    background-color: #2d3132;
     padding: 11px 17px;
     border-radius: 32px;
     color: white;
@@ -67,6 +89,43 @@ span{
     svg {
       width: 20.33px;
       height: 20.33px;
+    }
+  }
+}
+
+.collection {
+  .collection-item {
+    transition: all 3s linear;
+
+    .item {
+      img {
+        transition: all 0.5s linear;
+      }
+    }
+    .absolute {
+      transition: all 0.5s linear;
+      .flex {
+        svg {
+          transition: all 0.9s linear;
+        }
+      }
+    }
+  }
+  &:hover {
+    .collection-item {
+      .item {
+        img {
+          scale: 1.4;
+        }
+      }
+      .absolute {
+        bottom: 0;
+        .flex {
+          svg {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 }
@@ -100,6 +159,7 @@ span{
     }
   }
 }
+
 .chart-view {
   z-index: 1;
   .lead {
@@ -119,6 +179,96 @@ span{
     linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
 
   border: 1px solid #ffffff1a;
+
+  // input[type="range"] {
+  //   height: 38px;
+  //   -webkit-appearance: none;
+  //   margin: 10px 0;
+  //   width: 100%;
+  // }
+  // input[type="range"]:focus {
+  //   outline: none;
+  // }
+  // input[type="range"]::-webkit-slider-runnable-track {
+  //   width: 100%;
+  //   height: 10px;
+  //   cursor: pointer;
+  //   animate: 0.2s;
+  //   box-shadow: 1px 1px 1px #000000;
+  //   background: #3071a9;
+  //   border-radius: 5px;
+  //   border: 1px solid #000000;
+  // }
+  // input[type="range"]::-webkit-slider-thumb {
+  //   box-shadow: 1px 1px 1px #000000;
+  //   border: 1px solid #000000;
+  //   height: 30px;
+  //   width: 15px;
+  //   border-radius: 5px;
+  //   background: #ffffff;
+  //   cursor: pointer;
+  //   -webkit-appearance: none;
+  //   margin-top: -11px;
+  // }
+  // input[type="range"]:focus::-webkit-slider-runnable-track {
+  //   background: #3071a9;
+  // }
+  // input[type="range"]::-moz-range-track {
+  //   width: 100%;
+  //   height: 10px;
+  //   cursor: pointer;
+  //   animate: 0.2s;
+  //   box-shadow: 1px 1px 1px #000000;
+  //   background: #3071a9;
+  //   border-radius: 5px;
+  //   border: 1px solid #000000;
+  // }
+  // input[type="range"]::-moz-range-thumb {
+  //   box-shadow: 1px 1px 1px #000000;
+  //   border: 1px solid #000000;
+  //   height: 30px;
+  //   width: 15px;
+  //   border-radius: 5px;
+  //   // background: #ffffff;
+  //   cursor: pointer;
+  // }
+  // input[type="range"]::-ms-track {
+  //   width: 100%;
+  //   height: 10px;
+  //   cursor: pointer;
+  //   animate: 0.2s;
+  //   background: transparent;
+  //   border-color: transparent;
+  //   color: transparent;
+  // }
+  // input[type="range"]::-ms-fill-lower {
+  //   background: #3071a9;
+  //   border: 1px solid #000000;
+  //   border-radius: 10px;
+  //   box-shadow: 1px 1px 1px #000000;
+  // }
+  // input[type="range"]::-ms-fill-upper {
+  //   background: #3071a9;
+  //   border: 1px solid #000000;
+  //   border-radius: 10px;
+  //   box-shadow: 1px 1px 1px #000000;
+  // }
+  // input[type="range"]::-ms-thumb {
+  //   margin-top: 1px;
+  //   box-shadow: 1px 1px 1px #000000;
+  //   border: 1px solid #000000;
+  //   height: 30px;
+  //   width: 15px;
+  //   border-radius: 5px;
+  //   background: #ffffff;
+  //   cursor: pointer;
+  // }
+  // input[type="range"]:focus::-ms-fill-lower {
+  //   background: #3071a9;
+  // }
+  // input[type="range"]:focus::-ms-fill-upper {
+  //   background: #3071a9;
+  // }
 }
 
 @media (min-width: 1024px) {

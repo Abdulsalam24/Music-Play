@@ -11,6 +11,12 @@ import releaseImg5 from '../../assets/img/releaseImg5.svg'
 
 import releaseImg6 from '../../assets/img/releaseImg6.svg'
 
+import collectionImg1 from '../../assets/img/collectionImg1.svg'
+import collectionImg2 from '../../assets/img/collectionImg2.svg'
+import collectionImg3 from '../../assets/img/collectionImg3.svg'
+
+
+
 
 
 const chartData = [
@@ -98,11 +104,44 @@ const chartInfo = [
 
 ]
 
+const collectionsData = [
+    {
+        id: '1',
+        img: collectionImg1,
+        info: "Limits",
+        artist: "John watts",
+        likes: "23m likes",
+    },
+    {
+        id: '2',
+        img: collectionImg2,
+        info: "Limits",
+        artist: "John watts",
+        likes: "23m likes",
+    },
+    {
+        id: '3',
+        img: collectionImg3,
+        info: "Limits",
+        artist: "John watts",
+        likes: "23m likes",
+    },
+    {
+        id: '4',
+        img: chartImg3,
+        info: "Limits",
+        artist: "John watts",
+        likes: "23m likes",
+    },
+
+]
+
 
 const datas = {
     chartData,
     release,
-    chartInfo
+    chartInfo,
+    collectionsData
 }
 
 export default datas

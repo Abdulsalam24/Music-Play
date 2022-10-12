@@ -18,9 +18,9 @@ function App() {
         <SideNav />
 
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/viewChart/:id' element={<ViewChart />} />
-          <Route path='/collections' element={<Collections />} />
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/viewChart/:id' element={<ViewChart />} />
+          <Route exact path='/collections' element={<Collections />} />
         </Routes>
       </Router>
       <BottomNav />

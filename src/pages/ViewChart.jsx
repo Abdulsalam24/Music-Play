@@ -20,7 +20,7 @@ function ViewChart() {
       style={{
         backgroundImage: `url(${img})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "195vh 317vw",
+        backgroundSize: "230vh 342vw",
         backgroundPosition: "center",
       }}
     >
@@ -36,7 +36,7 @@ function ViewChart() {
               aliquam, purus sit amet luctus venenatis
             </p>
             <p className="my-2">64 songs ~ 16 hrs+</p>
-            <div className="info-control flex flex-wrap items-center gap-2">
+            <div className="info-control flex flex-wrap items-center gap-2 mt-5" >
               <li>
                 <Play className="inline" />
                 <i>Play all</i>
