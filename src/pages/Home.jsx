@@ -11,7 +11,7 @@ import Release from "../components/Release";
 
 function Home() {
   return (
-    <div className="container py-6">
+    <div className="container py-6 lg:pl-[30px]">
       <div className="lg:flex justify-between w-full lg:mb-10 items-start lg:max-h-full">
 
         <header className="max-w-sm lg:max-w-full m-auto lg:m-0 lg:w-[65%]">
@@ -68,6 +68,7 @@ function Home() {
         <div className="lg:w-[33%]">
           <TopChart />
         </div>
+
       </div>
 
       <Release />

@@ -66,9 +66,43 @@ const release = [
     }
 ]
 
+const chartInfo = [
+    {
+        id: '1',
+        img: chartImg3,
+        info: "Let me love you ~ Krisx",
+        type: "Single",
+        duration: "4:17",
+    },
+    {
+        id: '2',
+        img: chartImg2,
+        info: "Watin man go do ~ Burna",
+        type: "Single",
+        duration: "2:30",
+    },
+    {
+        id: '3',
+        img: chartImg2,
+        info: "Stand strong ~ Davido",
+        type: "Single",
+        duration: "2:30",
+    },
+    {
+        id: '4',
+        img: chartImg3,
+        info: "Closa ~ Ybee",
+        type: "Single",
+        duration: "2:30",
+    },
+
+]
+
+
 const datas = {
     chartData,
-    release
+    release,
+    chartInfo
 }
 
 export default datas

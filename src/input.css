@@ -8,3 +8,6 @@
   @apply w-11/12 m-auto my-4;
 }
 
+img{
+  display: block;
+}

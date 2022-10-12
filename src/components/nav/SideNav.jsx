@@ -10,15 +10,15 @@ import { useState } from "react";
 function SideNav() {
   const location = useLocation();
 
-  const [active, setActive] = useState(location.pathname);
-
   return (
     <div className="hidden lg:block absolute top-24 left-2 z-40">
       <ul className="flex flex-col gap-8 py-6 px-4 bg-black rounded-full">
         <li>
           <HiHome
             className="w-[30px] h-[30px]"
-            fill={active === "/" ? "#FACD66" : "#525552"}
+            fill={
+              location.pathname === "/" || "/viewChart/" ? "#FACD66" : "#525552"
+            }
           />
         </li>
         <li>

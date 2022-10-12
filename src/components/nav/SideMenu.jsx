@@ -1,27 +1,39 @@
 import React from "react";
+import { HiHome } from "react-icons/hi";
 
 import { ReactComponent as Menu } from "../../assets/img/menu.svg";
-import { ReactComponent as Home } from "../../assets/img/home.svg";
 import { ReactComponent as Logout } from "../../assets/img/logout.svg";
 import { ReactComponent as Playlist } from "../../assets/img/playlist.svg";
 import { ReactComponent as Radio } from "../../assets/img/radio.svg";
 import { ReactComponent as Profile } from "../../assets/img/profile.svg";
 import { ReactComponent as Video } from "../../assets/img/videos.svg";
+import { Link, useLocation } from "react-router-dom";
 
 function SideMenu({ handleNav }) {
+  const location = useLocation();
+
+
   return (
     <div className="side_menu absolute z-20 top--3 w-full h-screen">
       <ul className="flex flex-col gap-8 py-6 px-4">
         <li onClick={handleNav}>
           <Menu />
         </li>
-        <li>
-          <Home /> <i>Home</i>
-        </li>
-        <li>
-          <Playlist />
-          <i>My collections</i>
-        </li>
+        <Link to="/">
+          <li onClick={handleNav}>
+            <HiHome
+              className="w-[30px] h-[30px]"
+              fill={location.pathname === "/" || "/viewChart/" ? "#FACD66" : "#525552"}
+            />
+            <i>Home</i>
+          </li>
+        </Link>
+        <Link to="/collections">
+          <li onClick={handleNav}>
+            <Playlist />
+            <i>My collections</i>
+          </li>
+        </Link>
         <li>
           <Radio />
           <i>Radio</i>

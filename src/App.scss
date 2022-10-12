@@ -14,8 +14,16 @@ body {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
 }
+
+ul,
+li {
+  list-style: none;
+}
 svg {
   cursor: pointer;
+}
+h5{
+  font-size: 12px;
 }
 
 p {
@@ -34,25 +42,42 @@ h3 {
 h4 {
   font-size: 17px;
 }
+span{
+  font-size: 10px;
+}
 
 .bg-dark {
   background-color: #1a1e1f;
 }
 
-.thumbnail{
-  // background-color: red;
-  background: linear-gradient(
-    #000000b2,
-    rgb(0, 0, 0)
-  );
+.info-control {
+  margin-top: 25px;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #2D3132;
+    padding: 11px 17px;
+    border-radius: 32px;
+    color: white;
+
+    i {
+      font-style: normal;
+    }
+    svg {
+      width: 20.33px;
+      height: 20.33px;
+    }
+  }
 }
 
+.thumbnail {
+  background: linear-gradient(#000000b2, rgb(0, 0, 0));
+}
 
 .container {
-  background-color: var(--bg-color) !important;
   max-width: 1280px;
   margin: auto;
-  padding-left: 30px;
 }
 
 .side_menu {
@@ -73,6 +98,15 @@ h4 {
         color: white;
       }
     }
+  }
+}
+.chart-view {
+  z-index: 1;
+  .lead {
+    z-index: 1;
+  }
+  .thumbnail {
+    z-index: -1;
   }
 }
 
