@@ -12,7 +12,6 @@ import { Link, useLocation } from "react-router-dom";
 function SideMenu({ handleNav }) {
   const location = useLocation();
 
-
   return (
     <div className="side_menu absolute z-20 top--3 w-full h-screen">
       <ul className="flex flex-col gap-8 py-6 px-4">
@@ -23,7 +22,11 @@ function SideMenu({ handleNav }) {
           <li onClick={handleNav}>
             <HiHome
               className="w-[30px] h-[30px]"
-              fill={location.pathname === "/" || "/viewChart/" ? "#FACD66" : "#525552"}
+              fill={
+                location.pathname === "/" || "/viewChart/"
+                  ? "#FACD66"
+                  : "#525552"
+              }
             />
             <i>Home</i>
           </li>

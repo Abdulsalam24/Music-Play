@@ -15,37 +15,40 @@ function ViewChart() {
 
   return (
     <section
-      className="chart-view relative lg:pl-[90px] text-white"
+      className="chart-view relative lg:pl-[50px] text-white bg-center"
+
       style={{
         backgroundImage: `url(${img})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "257vh 179vw",
-        backgroundPosition: "top",
+        backgroundSize: "195vh 317vw",
+        backgroundPosition: "center",
       }}
     >
-      <div className="container py-6 flex flex-col gap-6">
-        <div className="img max-w-[320px] m-auto">
-          <img src={img} alt={artist} width="357px" height="289px" />
-        </div>
-        <div>
-          <h1>Tomorrow’s tunes</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis
-          </p>
-          <p className="my-2">64 songs ~ 16 hrs+</p>
-          <div className="info-control flex flex-wrap items-center gap-2">
-            <li>
-              <Play className="inline" />
-              <i>Play all</i>
-            </li>
-            <li>
-              <Playlist className="inline" />
-              <i> Add to collection</i>
-            </li>
-            <li>
-              <Heart />
-            </li>
+      <div className="container py-6">
+        <div className=" flex flex-col lg:flex-row items-center gap-6 pb-6">
+          <div className="img max-w-[320px] m-auto">
+            <img src={img} alt={artist} width="357px" height="289px" />
+          </div>
+          <div>
+            <h1>Tomorrow’s tunes</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis
+            </p>
+            <p className="my-2">64 songs ~ 16 hrs+</p>
+            <div className="info-control flex flex-wrap items-center gap-2">
+              <li>
+                <Play className="inline" />
+                <i>Play all</i>
+              </li>
+              <li>
+                <Playlist className="inline" />
+                <i> Add to collection</i>
+              </li>
+              <li>
+                <Heart />
+              </li>
+            </div>
           </div>
         </div>
 
