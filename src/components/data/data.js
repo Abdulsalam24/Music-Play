@@ -15,21 +15,21 @@ import releaseImg6 from '../../assets/img/releaseImg6.svg'
 
 const chartData = [
     {
-        id: 1,
+        id: '1',
         img: chartImg1,
         desc: "Golden age of 80s",
         artist: "Sean swadder",
         duration: "2:34:45",
     },
     {
-        id: 2,
+        id: '2',
         img: chartImg2,
         desc: "Reggae “n” blues",
         artist: "Dj YK mule",
         duration: "1:02:42",
     },
     {
-        id: 3,
+        id: '3',
         img: chartImg3,
         desc: "Tomorrow’s tunes",
         artist: "Obi Datti",
@@ -39,29 +39,29 @@ const chartData = [
 
 const release = [
     {
-        id: 1,
+        id: '1',
         img: releaseImg1,
     },
     {
-        id: 2,
+        id: '2',
         img: releaseImg2,
     },
     {
-        id: 3,
+        id: '3',
         img: releaseImg3,
     },
     {
-        id: 4,
+        id: '4',
         img: releaseImg4,
     },
     ,
     {
-        id: 5,
+        id: '5',
         img: releaseImg5,
     },
     ,
     {
-        id: 2,
+        id: '6',
         img: releaseImg6,
     }
 ]

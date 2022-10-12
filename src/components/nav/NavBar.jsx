@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import logo from "../assets/img/logo.svg";
+import logo from "../../assets/img/logo.svg";
 
-import { ReactComponent as Menu } from "../assets/img/menu.svg";
-import { ReactComponent as Search } from "../assets/img/search.svg";
+import { ReactComponent as Menu } from "../../assets/img/menu.svg";
+import { ReactComponent as Search } from "../../assets/img/search.svg";
 
 import SideMenu from "./SideMenu";
 
@@ -23,7 +23,7 @@ function NavBar({ body }) {
 
   return (
     <nav className="relative">
-      <div className="nav-bar container m-auto flex items-center p-3">
+      <div className="nav-bar m-auto flex items-center p-5">
         <div className="flex items-center gap-4 md:gap-10">
           <Menu className="menu md:hidden" onClick={handleNav} />
           <div className="logo">

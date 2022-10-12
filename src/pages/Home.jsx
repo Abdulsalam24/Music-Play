@@ -11,8 +11,9 @@ import Release from "../components/Release";
 
 function Home() {
   return (
-    <div className="container">
+    <div className="container py-6">
       <div className="lg:flex justify-between w-full lg:mb-10 items-start lg:max-h-full">
+
         <header className="max-w-sm lg:max-w-full m-auto lg:m-0 lg:w-[65%]">
           <div className="relative text-white">
             <div className="img relative overflow-hidden ">

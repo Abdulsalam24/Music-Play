@@ -1,12 +1,12 @@
 import React from "react";
 
-import { ReactComponent as Menu } from "../assets/img/menu.svg";
-import { ReactComponent as Home } from "../assets/img/home.svg";
-import { ReactComponent as Logout } from "../assets/img/logout.svg";
-import { ReactComponent as Playlist } from "../assets/img/playlist.svg";
-import { ReactComponent as Radio } from "../assets/img/radio.svg";
-import { ReactComponent as Profile } from "../assets/img/profile.svg";
-import { ReactComponent as Video } from "../assets/img/videos.svg";
+import { ReactComponent as Menu } from "../../assets/img/menu.svg";
+import { ReactComponent as Home } from "../../assets/img/home.svg";
+import { ReactComponent as Logout } from "../../assets/img/logout.svg";
+import { ReactComponent as Playlist } from "../../assets/img/playlist.svg";
+import { ReactComponent as Radio } from "../../assets/img/radio.svg";
+import { ReactComponent as Profile } from "../../assets/img/profile.svg";
+import { ReactComponent as Video } from "../../assets/img/videos.svg";
 
 function SideMenu({ handleNav }) {
   return (
