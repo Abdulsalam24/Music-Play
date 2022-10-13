@@ -7,7 +7,7 @@ function Charts() {
       <h3 className="text-white font-bold">Top charts</h3>
       <div className="m-auto my-5 lg:my-1">
         <div className="cursor-grab overflow-scroll lg:overflow-hidden flex lg:flex-col gap-4 lg:gap-5">
-          {datas.chartData.map((chart) => (
+          {datas.topChart.map((chart) => (
             <ChartItem key={chart.id} chart={chart} />
           ))}
         </div>

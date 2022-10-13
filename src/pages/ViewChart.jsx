@@ -9,14 +9,18 @@ import ChartList from "../components/viewChart/ChartList";
 function ViewChart() {
   const { id: currentChartId } = useParams();
 
-  const viewChar = datas.chartData.filter((data) => data.id === currentChartId);
+  const viewChar = datas.topChart.filter((data) => data.id === currentChartId);
 
   const [{ id, artist, desc, duration, img }] = viewChar;
+
+  console.log(
+    datas.topChart.map((char) => char.songs),
+    "cccccccccccqe"
+  );
 
   return (
     <section
       className="chart-view relative lg:pl-[50px] text-white bg-center"
-
       style={{
         backgroundImage: `url(${img})`,
         backgroundRepeat: "no-repeat",
@@ -36,7 +40,7 @@ function ViewChart() {
               aliquam, purus sit amet luctus venenatis
             </p>
             <p className="my-2">64 songs ~ 16 hrs+</p>
-            <div className="info-control flex flex-wrap items-center gap-2 mt-5" >
+            <div className="info-control flex flex-wrap items-center gap-2 mt-5">
               <li>
                 <Play className="inline" />
                 <i>Play all</i>

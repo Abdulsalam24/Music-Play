@@ -11,7 +11,7 @@ function Collections() {
           <li>Likes</li>
         </ul>
 
-        <div className="collection-list flex flex-wrap gap-5 md:gap-1 ">
+        <div className="collection-list flex flex-wrap gap-5 md:gap-0 ">
           {datas.collectionsData.map((collection) => (
             <CollectionsItem key={collection.id} collection={collection} />
           ))}

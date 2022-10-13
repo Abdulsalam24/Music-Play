@@ -19,13 +19,29 @@ import collectionImg3 from '../../assets/img/collectionImg3.svg'
 
 
 
-const chartData = [
+const topChart = [
     {
         id: '1',
         img: chartImg1,
         desc: "Golden age of 80s",
         artist: "Sean swadder",
         duration: "2:34:45",
+        songs: [
+            {
+                id: '1',
+                img: chartImg2,
+                info: "Watin man go do ~ Burna",
+                type: "Single",
+                duration: "2:30",
+            },
+            {
+                id: '2',
+                img: chartImg2,
+                info: "Watin man go do ~ Burna",
+                type: "Single",
+                duration: "2:30",
+            },
+        ]
     },
     {
         id: '2',
@@ -33,44 +49,36 @@ const chartData = [
         desc: "Reggae “n” blues",
         artist: "Dj YK mule",
         duration: "1:02:42",
+        songs: [
+            {
+                id: '1',
+                img: chartImg2,
+                info: "Watin man go do ~ Burna",
+                type: "Single",
+                duration: "2:30",
+            },
+        ]
     },
     {
         id: '3',
         img: chartImg3,
         desc: "Tomorrow’s tunes",
         artist: "Obi Datti",
+
         duration: "2:01:25",
+        songs: [
+            {
+                id: '1',
+                img: chartImg2,
+                info: "Watin man go do ~ Burna",
+                type: "Single",
+                duration: "2:30",
+            },
+        ]
     }
 ]
 
-const release = [
-    {
-        id: '1',
-        img: releaseImg1,
-    },
-    {
-        id: '2',
-        img: releaseImg2,
-    },
-    {
-        id: '3',
-        img: releaseImg3,
-    },
-    {
-        id: '4',
-        img: releaseImg4,
-    },
-    ,
-    {
-        id: '5',
-        img: releaseImg5,
-    },
-    ,
-    {
-        id: '6',
-        img: releaseImg6,
-    }
-]
+
 
 const chartInfo = [
     {
@@ -103,6 +111,45 @@ const chartInfo = [
     },
 
 ]
+
+
+const release = [
+    {
+        id: '1',
+        img: releaseImg1,
+    },
+    {
+        id: '2',
+        img: releaseImg2,
+    },
+    {
+        id: '3',
+        img: releaseImg3,
+    },
+    {
+        id: '4',
+        img: releaseImg4,
+    },
+    ,
+    {
+        id: '5',
+        img: releaseImg5,
+    },
+    ,
+    {
+        id: '6',
+        img: releaseImg6,
+    },
+    {
+        id: '7',
+        img: releaseImg6,
+    },
+    {
+        id: '8',
+        img: releaseImg6,
+    }
+]
+
 
 const collectionsData = [
     {
@@ -138,7 +185,7 @@ const collectionsData = [
 
 
 const datas = {
-    chartData,
+    topChart,
     release,
     chartInfo,
     collectionsData

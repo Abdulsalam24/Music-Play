@@ -45,7 +45,6 @@ function BottomNav() {
                 name="playing"
                 id="playing"
               />
-              
             </div>
           </div>
         </div>

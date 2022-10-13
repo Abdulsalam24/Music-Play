@@ -18,7 +18,7 @@ function SideNav() {
             <HiHome
               className="w-[30px] h-[30px]"
               fill={
-                location.pathname === "/" || "/viewChart"
+                location.pathname !== "/collections"
                   ? "#FACD66"
                   : "#525552"
               }

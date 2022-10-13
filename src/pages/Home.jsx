@@ -64,10 +64,7 @@ function Home() {
             </div>
           </div>
         </header>
-
-
         
-
         <div className="lg:w-[33%]">
           <TopChart />
         </div>
