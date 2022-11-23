@@ -1,21 +1,37 @@
+import { useContext } from "react";
 import { ReactComponent as Info } from "../../assets/img/info.svg";
+import MusicContext from "../../context/MusicContext";
 
+function ChartList({ chart }) {
+  const { setCurrentPlay, play, audio, handlePlay, handlePause } =
+    useContext(MusicContext);
 
-function ChartList({chart}) {
+  const handlePlayed = (song) => {
+    // audio.current.stop();
+    setCurrentPlay(song);
+  };
 
   return (
-    <div className="flex items-center gap-3">
-        <img src={chart.img} alt={chart.artist} />
-        <div className="info flex-1">
-            <h5>{chart.info}</h5>
-            <span>{chart.type}</span>
+    <>
+      {chart.songs.map((song) => (
+        <div
+          key={song.id}
+          className="flex items-center gap-3"
+          onClick={() => handlePlayed(song)}
+        >
+          <img className="w-[50px]" src={song.img} alt={song.artist} />
+          <div className="info flex-1">
+            <h5>{song.artist}</h5>
+            <span>{song.desc}</span>
+          </div>
+          <div className="control flex flex-col gap-1">
+            <Info />
+            <h5>{song.duration}</h5>
+          </div>
         </div>
-        <div className="control flex flex-col gap-1">
-            <Info/>
-            <h5>{chart.duration}</h5>
-        </div>
-    </div>
-  )
+      ))}
+    </>
+  );
 }
 
-export default ChartList
+export default ChartList;

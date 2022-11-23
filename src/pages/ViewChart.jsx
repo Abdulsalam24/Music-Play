@@ -7,17 +7,18 @@ import { ReactComponent as Heart } from "../assets/img/heart.svg";
 import ChartList from "../components/viewChart/ChartList";
 
 function ViewChart() {
+
   const { id: currentChartId } = useParams();
 
   const viewChar = datas.topChart.filter((data) => data.id === currentChartId);
 
-  const [{ id, artist, desc, duration, img }] = viewChar;
+  const [{ artist, img }] = viewChar;
 
-  console.log(
-    datas.topChart.map((char) => char.songs),
-    "cccccccccccqe"
-  );
 
+
+
+  // console.log(datas.topChart ,viewChar, 'datasdatasdatasdatas')
+  
   return (
     <section
       className="chart-view relative lg:pl-[50px] text-white bg-center"
@@ -57,7 +58,7 @@ function ViewChart() {
         </div>
 
         <div className="flex flex-col gap-3">
-          {datas.chartInfo.map((chart) => (
+          {viewChar.map((chart) => (
             <ChartList key={chart.id} chart={chart} />
           ))}
         </div>

@@ -3,8 +3,6 @@ import ReleaseItem from "./ReleaseItem";
 
 function Release() {
 
-
-
   return (
     <div className="mt-5">
       <h3 className="text-white font-bold">New release</h3>

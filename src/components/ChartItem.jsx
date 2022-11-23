@@ -30,6 +30,7 @@ function ChartItem({ chart }) {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

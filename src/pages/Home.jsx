@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import artistImg from "../assets/img/artistImg.svg";
 import heart from "../assets/img/heart.svg";
 import headerImg from "../assets/img/headerImg.svg";
@@ -10,18 +8,9 @@ import headerImgBigPerson from "../assets/img/headerImgBigPerson.svg";
 
 import TopChart from "../components/Charts";
 import Release from "../components/Release";
-import apiClient from "../components/data/spotify";
 
 function Home() {
 
-  useEffect(() => {
-
-   apiClient.get("me")
-
-   .then(res => console.log(res,'ressssssssssss'))
-   
-  }, [])
-  
   return (
     <div className="container py-6 lg:pl-[30px]">
       <div className="lg:flex justify-between w-full lg:mb-10 items-start lg:max-h-full">
