@@ -3,13 +3,7 @@ import { ReactComponent as Info } from "../../assets/img/info.svg";
 import MusicContext from "../../context/MusicContext";
 
 function ChartList({ chart }) {
-  const { setCurrentPlay, play, audio, handlePlay, handlePause } =
-    useContext(MusicContext);
-
-  const handlePlayed = (song) => {
-    // audio.current.stop();
-    setCurrentPlay(song);
-  };
+  const { handlePlayed } = useContext(MusicContext);
 
   return (
     <>
