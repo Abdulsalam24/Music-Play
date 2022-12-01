@@ -4,13 +4,13 @@ import MusicContext from "../context/MusicContext";
 function ReleaseItem({ rel }) {
 
 
-  const {handlePlayed} = useContext(MusicContext) 
+  const {handlePlay} = useContext(MusicContext) 
 
   // console.log(rel , 'rell')
 
 
   return (
-    <div className="min-h-8"  onClick={() => handlePlayed(rel)}>
+    <div className="min-h-8"  onClick={() => handlePlay(rel)}>
       <div className="relative h-full rounded-xl py-3 px-2 bg-dark">
         <div className="w-40 h-40">
           <img

@@ -3,7 +3,7 @@ import { ReactComponent as Info } from "../../assets/img/info.svg";
 import MusicContext from "../../context/MusicContext";
 
 function ChartList({ chart }) {
-  const { handlePlayed } = useContext(MusicContext);
+  const { handlePlay } = useContext(MusicContext);
 
   return (
     <>
@@ -11,7 +11,7 @@ function ChartList({ chart }) {
         <div
           key={song.id}
           className="flex items-center gap-3"
-          onClick={() => handlePlayed(song)}
+          onClick={() => handlePlay(song)}
         >
           <img className="w-[50px]" src={song.img} alt={song.artist} />
           <div className="info flex-1">

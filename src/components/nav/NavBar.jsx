@@ -13,6 +13,21 @@ function NavBar() {
     setSideMenu(!sideMenu);
   };
 
+  useEffect(() => {
+    const scroll = () => {
+      if (window.scroll) {
+        setSideMenu(sideMenu);
+      }
+    };
+
+    window.addEventListener("scroll", scroll);
+  }, []);
+
+  const screen = window.screen.width;
+
+  window.addEventListener("resize", () => {
+      setSideMenu(false);
+  });
 
   return (
     <nav className="relative">

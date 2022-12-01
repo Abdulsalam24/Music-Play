@@ -4,7 +4,12 @@ import { useParams } from "react-router-dom";
 import { ReactComponent as Play } from "../assets/img/playChart.svg";
 import { ReactComponent as Playlist } from "../assets/img/playListChart.svg";
 import { ReactComponent as Heart } from "../assets/img/heart.svg";
+import {AiFillHeart} from "react-icons/ai"
+
+
 import ChartList from "../components/viewChart/ChartList";
+import { useState } from "react";
+
 
 function ViewChart() {
 
@@ -14,14 +19,11 @@ function ViewChart() {
 
   const [{ artist, img }] = viewChar;
 
+  const [likes , setLikes] = useState(false)
 
-
-
-  // console.log(datas.topChart ,viewChar, 'datasdatasdatasdatas')
-  
   return (
     <section
-      className="chart-view relative lg:pl-[50px] text-white bg-center"
+      className="chart-view relative lg:pl-[50px] pb-24 text-white bg-center"
       style={{
         backgroundImage: `url(${img})`,
         backgroundRepeat: "no-repeat",
@@ -50,8 +52,12 @@ function ViewChart() {
                 <Playlist className="inline" />
                 <i> Add to collection</i>
               </li>
-              <li>
-                <Heart />
+
+              <li onClick={() => setLikes(!likes)}>
+                {
+                  !likes ? <Heart/> :  <AiFillHeart fill="red"/>
+                }
+               
               </li>
             </div>
           </div>

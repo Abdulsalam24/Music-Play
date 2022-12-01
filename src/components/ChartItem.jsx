@@ -22,7 +22,6 @@ function ChartItem({ chart }) {
         <div className="py-3 lg:py-0 text-white lg:flex-1">
           <h4 className="mt-2 lg:m-0">{chart.artist}</h4>
           <p className="mb-4 lg:m-0 text-gray-600"> {chart.desc}</p>
-          {/* <p> {chart.duration}</p> */}
         </div>
         <div className="absolute top-3 right-4 lg:static">
           <div className="border border-white rounded-full p-1">

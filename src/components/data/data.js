@@ -1,15 +1,6 @@
 import chartImg2 from '../../assets/img/chartImg2.svg'
 import chartImg3 from '../../assets/img/chartImg3.svg'
 
-import releaseImg1 from '../../assets/img/releaseImg1.svg'
-import releaseImg2 from '../../assets/img/releaseImg2.svg'
-import releaseImg3 from '../../assets/img/releaseImg3.svg'
-import releaseImg4 from '../../assets/img/releaseImg4.svg'
-
-import releaseImg5 from '../../assets/img/releaseImg5.svg'
-
-import releaseImg6 from '../../assets/img/releaseImg6.svg'
-
 import collectionImg1 from '../../assets/img/collectionImg1.svg'
 import collectionImg2 from '../../assets/img/collectionImg2.svg'
 import collectionImg3 from '../../assets/img/collectionImg3.svg'
@@ -161,8 +152,6 @@ const topChart = [
     }
 ]
 
-
-
 const chartInfo = [
     // {
     //     id: '1',
@@ -193,15 +182,6 @@ const chartInfo = [
     //     duration: "2:30",
     // },
 ]
-
-// {
-//     "artist": "Tatiana",
-//     "name": "african giant",
-//     "path": "music/tatiana.mp3",
-//     "duration": 200,
-//     "cover": "images/new-release-4.png"
-//   },
-
 
 const release = [
     {
@@ -261,7 +241,6 @@ const release = [
         song : "https://www.val9ja.com/wp-content/uploads/2022/07/Burna_Boy_Ft_Victony_-_Different_Size.mp3",
     }
 ]
-
 
 const collectionsData = [
     {
